@@ -1,0 +1,5 @@
+ksystemlog (4:4.11.1-1) UNRELEASED; urgency=low
+
+  * First release of kdeadmin after being split by upstream.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 04 Sep 2013 12:19:39 +0200
