@@ -2,6 +2,7 @@ ksystemlog (4:4.11.5-1) UNRELEASED; urgency=low
 
   * New upstream release.
   * Disable unit test on build time, reduce build deps.
+  * Add autopkgtest.
 
  -- Maximiliano Curia <maxy@debian.org>  Tue, 28 Jan 2014 17:02:21 +0100
 
