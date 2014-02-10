@@ -5,6 +5,7 @@ ksystemlog (4:4.12.2-1) UNRELEASED; urgency=low
   * Add autopkgtest.
   * Bump Standards-Version to 3.9.5, no changes needed.
   * New upstream release.
+  * Bump kde-sc-dev-latest build dependency.
 
  -- Maximiliano Curia <maxy@debian.org>  Tue, 04 Feb 2014 20:58:33 +0100
 
