@@ -1,8 +1,8 @@
-ksystemlog (4:4.14.0-1) UNRELEASED; urgency=medium
+ksystemlog (4:4.14.0-1) unstable; urgency=medium
 
   * New upstream release.
 
- -- Maximiliano Curia <maxy@debian.org>  Fri, 22 Aug 2014 06:24:05 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 22 Aug 2014 20:09:38 +0200
 
 ksystemlog (4:4.12.2-2) unstable; urgency=medium
 
