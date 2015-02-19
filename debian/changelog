@@ -7,7 +7,7 @@ ksystemlog (4:14.12.2-1~) UNRELEASED; urgency=medium
 ksystemlog (4:14.12.2-0ubuntu1) vivid; urgency=medium
 
   * New upstream release
-  * Remove unstable from watch file, uscan fails with 
+  * Remove unstable from watch file, uscan fails with
     remote site does not even have current version
 
  -- Scarlett Clark <sgclark@kubuntu.org>  Tue, 10 Feb 2015 08:57:35 -0800
@@ -213,7 +213,7 @@ ksystemlog (4:4.10.90-0ubuntu1) saucy; urgency=low
   * New upstream beta release
 
   [ Philip Muškovac ]
-  * Debug package depends on = binary:Version of main package 
+  * Debug package depends on = binary:Version of main package
 
  -- Michał Zając <quintasan@kubuntu.org>  Fri, 28 Jun 2013 18:24:02 +0100
 
