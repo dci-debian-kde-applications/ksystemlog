@@ -1,6 +1,8 @@
 ksystemlog (4:15.12.0-0ubuntu1) UNRELEASED; urgency=medium
 
   * New upstream release
+  * Adding missing build deps
+  * Updating new paths in install file
 
  -- Clive Johnston <clivejo@aol.com>  Sat, 02 Jan 2016 14:20:01 +0000
 

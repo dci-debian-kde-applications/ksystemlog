@@ -10,9 +10,23 @@ Uploaders: Sune Vuorela <sune@debian.org>,
            Maximiliano Curia <maxy@debian.org>
 Build-Depends: cmake,
                debhelper (>= 9),
+               extra-cmake-modules,
                kde-sc-dev-latest (>= 4:4.12),
                kdelibs5-dev,
-               pkg-kde-tools (>= 0.12)
+               kdoctools-dev,
+               kio-dev,
+               libkf5archive-dev,
+               libkf5completion-dev,
+               libkf5config-dev,
+               libkf5coreaddons-dev,
+               libkf5i18n-dev,
+               libkf5iconthemes-dev,
+               libkf5itemviews-dev,
+               libkf5textwidgets-dev,
+               libkf5widgetsaddons-dev,
+               libkf5xmlgui-dev,
+               pkg-kde-tools (>= 0.12),
+               qtbase5-dev
 Standards-Version: 3.9.6
 XS-Testsuite: autopkgtest
 Homepage: http://www.kde.org/
