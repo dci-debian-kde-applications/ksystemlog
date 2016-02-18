@@ -1,7 +1,11 @@
 ksystemlog (4:15.12.1-0ubuntu1) UNRELEASED; urgency=medium
 
+  [ Clive Johnston ]
   * Merged with Debian
   * New upstream release
+
+  [ Scarlett Clark ]
+  * Add missing optional deps pkg-config and systemd for journld. 
 
  -- Clive Johnston <clivejo@aol.com>  Tue, 09 Feb 2016 16:25:52 +0000
 
