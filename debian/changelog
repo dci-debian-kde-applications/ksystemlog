@@ -1,3 +1,12 @@
+ksystemlog (4:16.04.0-1~1.gbp8fe882) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @8fe8826c3586db2438856f69f737b653abb1b162 **
+
+  * Bump Standards-Version to 3.9.8
+  * UNRELEASED
+
+ -- Automatic packaging <jenkins@amadeus.gnuservers.com.ar>  Thu, 21 Apr 2016 05:45:10 +0200
+
 ksystemlog (4:15.12.0-1) experimental; urgency=medium
 
   * New upstream release (15.12.0).
