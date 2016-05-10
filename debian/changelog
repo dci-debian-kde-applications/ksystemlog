@@ -1,6 +1,6 @@
-ksystemlog (4:16.04.0-1~2.gbp060494) UNRELEASED; urgency=medium
+ksystemlog (4:16.04.1-1~1.gbp48d5da) UNRELEASED; urgency=medium
 
-  ** SNAPSHOT build @0604945d7a4283ef39ee7b13778e6ce3615582e6 **
+  ** SNAPSHOT build @48d5da15c7fbd106cc1659e39dee52b1379f7ac8 **
 
   [ Automatic packaging ]
   ** SNAPSHOT build @8fe8826c3586db2438856f69f737b653abb1b162 **
@@ -11,8 +11,9 @@ ksystemlog (4:16.04.0-1~2.gbp060494) UNRELEASED; urgency=medium
   [ Maximiliano Curia ]
   * Add upstream metadata (DEP-12)
   * debian/control: Update Vcs-Browser and Vcs-Git fields
+  * UNRELEASED
 
- -- Maximiliano Curia <maxy@gnuservers.com.ar>  Mon, 09 May 2016 11:45:18 +0200
+ -- Maximiliano Curia <jenkins@amadeus.gnuservers.com.ar>  Tue, 10 May 2016 23:45:22 +0200
 
 ksystemlog (4:15.12.0-1) experimental; urgency=medium
 
