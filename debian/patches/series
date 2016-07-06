@@ -1,1 +1,2 @@
-neon_systemd_pkgconfig.diff
+maintainer_fix-test.diff
+maintainer_systemd_pkgconfig.diff
