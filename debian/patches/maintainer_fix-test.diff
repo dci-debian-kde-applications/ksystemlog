@@ -1,0 +1,91 @@
+commit 8283de282f103501ae8d0108db1c52feddfc331c
+Author: Harald Sitter <sitter@kde.org>
+Date:   Wed Jul 6 16:58:23 2016 +0200
+
+    make kiologfilereader test actually do something
+    
+    previously:
+    - it read from http which would error in the kjob but since
+      the kiologreader class has no facilities to communicate errors this
+      gets ignored
+    - it consturcted a !local! url from an http uri string resulting in kio
+      constructing a file slave for http://localhost...
+    - it had a 100 second wait for no good reason
+    - it didn't do any verification of any sort
+    - all in all this test was a fancy sleep 100
+    
+    new:
+    - replaced excess slot with lambda to compress test case to make it
+      more readable in one go
+    - find fixture on-disk via QFINDTESTDATA
+    - make logfile read that
+    - connect to read lines and line-for-line compare them with the fixture
+      (read via qtextstream)
+    
+    i.e. this test now actually checks that the logfile class can read lines
+    
+    REVIEW: 128328
+
+diff --git a/tests/kioLogFileReaderTest.cpp b/tests/kioLogFileReaderTest.cpp
+index 4c15f34..56a3390 100644
+--- a/tests/kioLogFileReaderTest.cpp
++++ b/tests/kioLogFileReaderTest.cpp
+@@ -2,6 +2,8 @@
+  *   KSystemLog, a system log viewer tool                                  *
+  *   Copyright (C) 2007 by Nicolas Ternisien                               *
+  *   nicolas.ternisien@gmail.com                                           *
++ *   Copyright (C) 2016 by Harald Sitter                                   *
++ *   sitter@kde.org                                                        *
+  *                                                                         *
+  *   This program is free software; you can redistribute it and/or modify  *
+  *   it under the terms of the GNU General Public License as published by  *
+@@ -43,8 +45,6 @@ private slots:
+ 
+     void testKioLogFileReader();
+ 
+-    void readLine(const QString &line);
+-
+ private:
+     TestUtil testUtil;
+ };
+@@ -56,27 +56,24 @@ void KioLogFileReaderTest::initTestCase()
+ 
+ void KioLogFileReaderTest::testKioLogFileReader()
+ {
+-    /*
+-    QList<LogFile> logFiles = testUtil.createLogFiles(":/logs/logFileReader/file.txt");
+-    LogFile logFile = logFiles.first();
+-    */
+-
+-    /// home/nicolas/test.txt
+-    LogFile logFile(QUrl::fromLocalFile(QStringLiteral("http://localhost/test.txt")),
++    QString fixturePath = QFINDTESTDATA("testFiles/logFileReader/file.txt");
++    LogFile logFile(QUrl::fromLocalFile(fixturePath),
+                     Globals::instance().informationLogLevel());
+ 
+     KioLogFileReader *logFileReader = new KioLogFileReader(logFile);
+-
+     logFileReader->open();
+ 
+-    connect(logFileReader, &KioLogFileReader::lineRead, this, &KioLogFileReaderTest::readLine);
+-
+-    QTest::qWait(100000);
+-}
+-
+-void KioLogFileReaderTest::readLine(const QString &line)
+-{
+-    logDebug() << "Line " << line << endl;
++    connect(logFileReader, &KioLogFileReader::lineRead, this, [=](const QString &line) {
++        logDebug() << "Line " << line << endl;
++        static QFile file(fixturePath);
++        static bool open = false;
++        if (!open) {
++            QVERIFY(file.open(QIODevice::ReadOnly | QIODevice::Text));
++            open = true;
++        }
++        static QTextStream stream(&file);
++        QCOMPARE(line, stream.readLine());
++    });
+ }
+ 
+ QTEST_MAIN(KioLogFileReaderTest)
