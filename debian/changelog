@@ -1,11 +1,14 @@
-ksystemlog (4:16.04.1-2) UNRELEASED; urgency=medium
+ksystemlog (4:16.04.3-1~1.gbp374b30) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @374b30fb072d4dcedd26587cadfe7300bfd5f561 **
 
   * Do not start kdeinit4 for autopkgtest
     - The app is using kf5, so kdeinit4 is pointless
     - kdeinit4 is not installed into the testbed so the call is already noop
       anyway
+  * UNRELEASED
 
- -- Harald Sitter <sitter@kde.org>  Thu, 30 Jun 2016 08:52:50 +0200
+ -- Harald Sitter <jenkins@gnuservers.com.ar>  Tue, 12 Jul 2016 23:45:10 +0200
 
 ksystemlog (4:16.04.1-1) unstable; urgency=medium
 
