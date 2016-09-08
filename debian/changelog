@@ -1,5 +1,8 @@
-ksystemlog (4:16.08.0-1~1.gbpe25d45) UNRELEASED; urgency=medium
+ksystemlog (4:16.08.1-1~1.gbp9a52b0) UNRELEASED; urgency=medium
 
+  ** SNAPSHOT build @9a52b0e1d13fec606d6126445bc86393d959ecbd **
+
+  [ Harald Sitter ]
   ** SNAPSHOT build @e25d45d67a00bf6449628543101ce3da2bc299f9 **
 
   * Do not start kdeinit4 for autopkgtest
@@ -9,7 +12,10 @@ ksystemlog (4:16.08.0-1~1.gbpe25d45) UNRELEASED; urgency=medium
   * UNRELEASED
   * UNRELEASED
 
- -- Harald Sitter <jenkins@gnuservers.com.ar>  Thu, 18 Aug 2016 23:45:12 +0200
+  [ Automatic packaging ]
+  * Update build-deps and deps with the info from cmake
+
+ -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Thu, 08 Sep 2016 23:45:42 +0200
 
 ksystemlog (4:16.04.1-1) unstable; urgency=medium
 
