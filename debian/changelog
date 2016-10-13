@@ -1,6 +1,6 @@
-ksystemlog (4:16.08.1-1~1.gbp9a52b0) UNRELEASED; urgency=medium
+ksystemlog (4:16.08.2-1~1.gbpb56288) UNRELEASED; urgency=medium
 
-  ** SNAPSHOT build @9a52b0e1d13fec606d6126445bc86393d959ecbd **
+  ** SNAPSHOT build @b562887686b58c5d3395e17e388a9f731d4d7122 **
 
   [ Harald Sitter ]
   ** SNAPSHOT build @e25d45d67a00bf6449628543101ce3da2bc299f9 **
@@ -14,8 +14,9 @@ ksystemlog (4:16.08.1-1~1.gbp9a52b0) UNRELEASED; urgency=medium
 
   [ Automatic packaging ]
   * Update build-deps and deps with the info from cmake
+  * Update build-deps and deps with the info from cmake
 
- -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Thu, 08 Sep 2016 23:45:42 +0200
+ -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Thu, 13 Oct 2016 23:45:23 +0200
 
 ksystemlog (4:16.04.1-1) unstable; urgency=medium
 
