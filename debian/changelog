@@ -1,22 +1,18 @@
-ksystemlog (4:16.08.2-1~1.gbpb56288) UNRELEASED; urgency=medium
-
-  ** SNAPSHOT build @b562887686b58c5d3395e17e388a9f731d4d7122 **
+ksystemlog (4:16.08.2-1) unstable; urgency=medium
 
   [ Harald Sitter ]
-  ** SNAPSHOT build @e25d45d67a00bf6449628543101ce3da2bc299f9 **
-
   * Do not start kdeinit4 for autopkgtest
     - The app is using kf5, so kdeinit4 is pointless
     - kdeinit4 is not installed into the testbed so the call is already noop
       anyway
-  * UNRELEASED
-  * UNRELEASED
 
   [ Automatic packaging ]
   * Update build-deps and deps with the info from cmake
-  * Update build-deps and deps with the info from cmake
 
- -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Thu, 13 Oct 2016 23:45:23 +0200
+  [ Maximiliano Curia ]
+  * New upstream release (16.08.2)
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 18 Oct 2016 09:41:58 +0200
 
 ksystemlog (4:16.04.1-1) unstable; urgency=medium
 
