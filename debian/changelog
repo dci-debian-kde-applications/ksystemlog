@@ -1,3 +1,11 @@
+ksystemlog (4:16.08.3-1~1.gbp0287d0) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @0287d0d6d63a5dd2a00bc4ff7918515218ac2c35 **
+
+  * UNRELEASED
+
+ -- Maximiliano Curia <jenkins@gnuservers.com.ar>  Thu, 10 Nov 2016 23:45:13 +0100
+
 ksystemlog (4:16.08.2-1) unstable; urgency=medium
 
   [ Harald Sitter ]
