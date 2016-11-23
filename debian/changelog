@@ -1,10 +1,8 @@
-ksystemlog (4:16.08.3-1~1.gbp0287d0) UNRELEASED; urgency=medium
+ksystemlog (4:16.08.3-1) unstable; urgency=medium
 
-  ** SNAPSHOT build @0287d0d6d63a5dd2a00bc4ff7918515218ac2c35 **
+  * New upstream release (16.08.3)
 
-  * UNRELEASED
-
- -- Maximiliano Curia <jenkins@gnuservers.com.ar>  Thu, 10 Nov 2016 23:45:13 +0100
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 23 Nov 2016 21:17:05 +0100
 
 ksystemlog (4:16.08.2-1) unstable; urgency=medium
 
