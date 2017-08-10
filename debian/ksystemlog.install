@@ -2,3 +2,4 @@ usr/bin/ksystemlog
 usr/share/applications/org.kde.ksystemlog.desktop
 usr/share/doc/HTML/*/ksystemlog/
 usr/share/kxmlgui5/ksystemlog/ksystemlogui.rc
+usr/share/locale/

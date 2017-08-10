@@ -36,6 +36,8 @@ Package: ksystemlog
 Section: admin
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
+Breaks: ${kde-l10n:all}
+Replaces: ${kde-l10n:all}
 Description: system log viewer
  KSystemLog show all logs of your system, grouped by General (Default system
  log, Authentication, Kernel, X.org...), and optional Services (Apache, Cups,
