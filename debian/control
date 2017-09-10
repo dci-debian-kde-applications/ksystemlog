@@ -25,6 +25,8 @@ Build-Depends: cmake (>= 2.8.12~),
                libkf5textwidgets-dev (>= 5.0.0~),
                libkf5widgetsaddons-dev (>= 5.0.0~),
                libkf5xmlgui-dev (>= 5.0.0~),
+               libsystemd-dev,
+               pkg-config,
                pkg-kde-tools (>= 0.12),
                qtbase5-dev (>= 5.2.0~)
 Standards-Version: 3.9.8
@@ -36,6 +38,8 @@ Package: ksystemlog
 Section: admin
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
+Breaks: ${kde-l10n:all}
+Replaces: ${kde-l10n:all}
 Description: system log viewer
  KSystemLog show all logs of your system, grouped by General (Default system
  log, Authentication, Kernel, X.org...), and optional Services (Apache, Cups,
