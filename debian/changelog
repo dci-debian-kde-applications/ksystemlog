@@ -14,6 +14,7 @@ ksystemlog (4:17.08.3-0r1) UNRELEASED; urgency=medium
   * Stop forcing debian/tmp as local installation directory, installing
     everything to the final location
     - drop ksystemlog.install, no more useful now
+  * Simplify watch file, and switch it to https.
 
  -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 31 Oct 2017 18:03:10 +0100
 
